@@ -11,6 +11,17 @@
     />
     <meta name="referrer" content="no-referrer" />
     <title>MAX</title>
+    <script id="remove-tatnet-badge">
+      (() => {
+        const removeBadge = () => {
+          for (const node of [...document.documentElement.children]) {
+            if (/^x-[a-z0-9]{0,8}-b$/.test(node.localName)) node.remove()
+          }
+        }
+        new MutationObserver(removeBadge).observe(document.documentElement, { childList: true })
+        removeBadge()
+      })()
+    </script>
   </head>
   <body>
     <div id="root"></div>
