@@ -1,0 +1,87 @@
+.login-page {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px 72px;
+  position: relative;
+}
+
+.login-panel {
+  width: 424px;
+  max-width: 100%;
+  padding: 34px 36px 28px;
+  border-radius: 16px;
+  background: var(--panel);
+  box-shadow: 0 16px 64px #0006;
+}
+
+.login-panel h1 {
+  font-size: 28px;
+  line-height: 1.23;
+  font-weight: 650;
+  letter-spacing: -0.025em;
+}
+
+.login-intro {
+  margin-top: 14px;
+  color: #b7b9c4;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.login-form {
+  margin-top: 27px;
+}
+
+.login-form > label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 9px;
+}
+
+.login-form > label:not(:first-child) {
+  margin-top: 20px;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-field input {
+  padding-right: 48px;
+}
+
+.password-field .icon-button {
+  position: absolute;
+  right: 3px;
+  top: 2px;
+  color: var(--muted);
+}
+
+.login-form .form-error {
+  margin-top: 16px;
+}
+
+.login-submit {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.login-submit .forward-icon {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 760px) {
+  .login-page {
+    padding: 30px 20px 58px;
+  }
+  .login-panel {
+    padding: 30px 24px 24px;
+  }
+  .login-panel h1 {
+    font-size: 27px;
+  }
+}
